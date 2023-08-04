@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz de filmes</title>
+</head>
+
+<body class="align">
+
+    <h1>Adivinhe o filme apenas com essa dica</h1>
+
+
+    <blockquote>
+        <div class="resumo">
+            <h2 id="resumoDoFilme" class="texto">Anões, elfos, humanos e hobbits, todos unidos para destruir um anel
+            </h2>
+        </div>
+    </blockquote>
+
+    <form action="">
+        <div class="form_field">
+            <input type="text" id="input" class="form_input" oninput="verificarTexto(this.value)"> <br>
+            <span class="icon"></span>
+        </div>
+
+        <div class="wrapper">
+            <button class="button" id="botao" onclick="proximaPergunta()">Próximo</button>
+        </div>
+    </form>
+
+    <script src="./script.js"></script>
+</body>
+
+<!-- 
+Ideia e código para o front retirado e adaptado de:
+
+@thelaazyguy
+https://codepen.io/thelaazyguy
+
+&&
+
+@marcobiedermann
+https://codepen.io/marcobiedermann 
+
+Background por: @hrshishym
+https://codepen.io/hrshishym
+-->
+
+</html>

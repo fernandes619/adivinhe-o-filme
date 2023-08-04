@@ -1,0 +1,130 @@
+.align {
+    display: grid;
+    place-items: center;
+    background: linear-gradient(to bottom,
+            #4B7CB6 0%,
+            #B64B7C 33%,
+            #4B7CB6 66%,
+            #B64B7C 100%);
+    background-size: 100% 300%;
+    background-position: 0% 0%;
+
+    animation: anime-grad 3s linear infinite;
+}
+
+@keyframes anime-grad {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+.icon {
+    font-size: 2rem;
+}
+
+body {
+    color: lightslategray;
+    font-family: sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    min-height: 100vh;
+}
+
+h1 {
+    position: relative;
+    margin-top: 10%;
+    margin-bottom: 0rem;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1;
+    color: #f0f8ff;
+}
+
+input {
+    font: inherit;
+    outline: 0;
+}
+
+.form_field {
+    position: relative;
+    margin-bottom: 15rem;
+    margin-top: 0.5em;
+    left: center;
+}
+
+.form_input {
+    outline: none;
+    border-radius: 0.25em;
+    border-style: solid;
+    border-width: 2px;
+    font-size: 1.5rem;
+    padding: 0.5em 4em 0.5em 2em;
+    border-color: #333;
+}
+
+
+.form_input.valid {
+    border-color: forestgreen;
+}
+
+.invalid {
+    border-color: firebrick;
+}
+
+/* ---------------------------------- A PARTIR DAQUI CSS DO BOTÃO ---------------------------------- */
+
+.wrapper {
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button {
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+
+.button.valid {
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    content: "Resposta certa";
+    color: white;
+    background: #009929;
+    transition: all .35s;
+    border-color: none;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+
+.button.valid:hover {
+    cursor: pointer;
+    background-color: #003400;
+}
