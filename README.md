@@ -9,3 +9,5 @@ Basta ler a dica fornecida e digitar o nome do filme que você acha que é, caso
 
 ### Atualizações futuras
 Pretendo em algum momento no futuro corrigir um bug de que o usuário consegue passar para o próximo resumo sem digitar nada, e também pretendo adicionar novas perguntas e icrementar mais funções
+
+### Você pode jogar o jogo neste link: https://quiz-de-filmes.netlify.app/
